@@ -56,7 +56,7 @@ node *root = new node(pre[i]);
 
  int index =-1;
 
- for (int j=s;j<e;j++){
+ for (int j=s;j<=e;j++){
     if(in[j]== pre[i]){
         index = j;
         break;
