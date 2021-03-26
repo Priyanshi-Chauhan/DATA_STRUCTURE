@@ -1,0 +1,23 @@
+
+#include<iostream>
+using namespace std;
+
+int shortestpath(int n ) {
+    // base case
+    int countt =0;
+    if(n==0  || n ==1){
+        return countt=0;
+    }
+    while(n%3!=0){
+        n=n-1;
+        countt++;
+    }
+    int op=shortestpath(n/3);
+return op+countt+1;
+
+}
+int main () {
+    int n;
+    cin>>n;
+    cout<<shortestpath(n);
+ return 0;}

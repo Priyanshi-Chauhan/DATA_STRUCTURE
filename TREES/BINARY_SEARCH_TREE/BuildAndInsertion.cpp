@@ -30,6 +30,7 @@ return root;
  node *build(){
  int d; cin>>d;
  node *root =NULL;
+
 while(d!=-1){
  root = insertion(root , d);
  cin>>d;
