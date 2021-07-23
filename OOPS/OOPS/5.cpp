@@ -1,0 +1,28 @@
+#include<iostream>
+using namespace std;
+class a{
+private:
+    int num;
+public:
+    a(int x) : num(x) {};
+    void show () {
+    cout<<"i is = " << num<< endl;}
+};
+class b{
+private :
+     int digit;
+     public:
+         b( int x)  : digit(x){};
+         operator a() const {return a(digit);}
+};
+
+void s ( a aao ){
+
+aao.show();
+}
+ int main() {
+     b big(10);
+     s(big);
+     s(20);
+
+ return 0;}
