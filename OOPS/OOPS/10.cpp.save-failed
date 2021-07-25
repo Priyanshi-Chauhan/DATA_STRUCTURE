@@ -1,0 +1,45 @@
+
+#include<iostream>
+using  namespace std;
+class base{
+public:
+    base() {};
+     void hello()
+{
+
+}        cout<< " hey hii"<<endl;
+
+};
+class derived1 :  public base{
+public:
+  derived1() {};
+  void hello(){
+        cout<< " hey hii d1"<<endl;
+    }
+};
+
+class derived2 :public  base {
+public:
+      derived2() {};
+      void hello() {
+        cout<< " hey hii d2"<<endl;
+    }
+};
+class derived3 : public derived1, public derived2{
+public:
+      derived3() {};
+      void hello{
+        cout<< " hey hii d3"<<endl;
+    }
+};
+int main() {
+ base *b[3];
+ b[0] = new derived1;
+ b[1] = new derived2;
+ b[2] = new derived3;
+ b[3] = new derived4;
+ b[3]->hello();
+ return 0;
+
+
+ }
